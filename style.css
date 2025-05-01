@@ -91,13 +91,6 @@ main {
     /* background-color: #fff; */
 }
 
-/* Add rounded corners specifically for the Daily Affirmations icon */
-.app-image-placeholder img.daily-affirmations-icon {
-    border-radius: 15px; /* Apply rounded corners */
-    /* Ensure object-fit is still applied if needed, though inherited */
-    object-fit: contain; 
-}
-
 /* Remove or comment out the specific styling for the placeholder span if no longer needed */
 /*
 .app-image-placeholder span {
