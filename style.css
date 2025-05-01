@@ -1,0 +1,264 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text */
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-weight: 600;
+    color: #212529; /* Slightly darker heading color */
+}
+
+a {
+    color: #007bff; /* Standard blue link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #6f42c1, #007bff); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+    margin-bottom: 2rem;
+    border-bottom-left-radius: 50% 20px;
+    border-bottom-right-radius: 50% 20px;
+}
+
+.app-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Main Content & Sections */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #495057; /* Medium gray heading */
+}
+
+/* Video Showcase */
+#video-showcase .video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures video corners are rounded */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#video-showcase video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Carousel & Features Section */
+#carousel-features {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.carousel-container,
+.features-container {
+    flex: 1; /* Each takes up half the space */
+    min-width: 300px; /* Minimum width before wrapping */
+}
+
+/* Carousel */
+.carousel-container h2,
+.features-container h2 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.carousel {
+    position: relative;
+    height: 350px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #e9ecef; /* Placeholder background */
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Use contain to avoid cropping important UI */
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+/* Features List */
+.features-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.features-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1rem;
+}
+
+.features-list li::before {
+    content: '✓'; /* Checkmark */
+    position: absolute;
+    left: 0;
+    color: #28a745; /* Green checkmark */
+    font-weight: bold;
+}
+
+/* Description Section */
+#description {
+    text-align: center;
+}
+
+#description p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+/* Call to Action (CTA) */
+#cta {
+    text-align: center;
+    background: linear-gradient(135deg, #007bff, #6f42c1); /* Matching header gradient */
+    color: white;
+}
+
+#cta h2 {
+    color: white;
+}
+
+.download-button {
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px; /* Pill shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-button:hover {
+    background-color: #e9ecef;
+    color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.compatibility {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #6c757d; /* Gray footer text */
+    border-top: 1px solid #dee2e6;
+}
+
+footer a {
+    color: #007bff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 2.8rem;
+    }
+
+    header {
+        padding: 3rem 1rem 2rem;
+    }
+
+    #carousel-features {
+        flex-direction: column; /* Stack carousel and features */
+    }
+
+    .carousel-container,
+    .features-container {
+        width: 100%; /* Full width when stacked */
+    }
+
+    .carousel {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    section {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-title {
+        font-size: 2.2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .features-list li {
+        font-size: 0.95rem;
+    }
+
+    .download-button {
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+    }
+} 
