@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eef1f5; /* Light grayish blue background */
+    background-color: #eef1f5 !important; /* Light grayish blue background - added important */
     color: #333;
     line-height: 1.6;
 }
@@ -53,7 +53,7 @@ main {
 
 /* App Card Styling */
 .app-card {
-    background-color: #ffffff;
+    background-color: #ffffff !important; /* White background - added important */
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     overflow: hidden;
