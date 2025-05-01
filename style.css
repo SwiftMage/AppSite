@@ -69,18 +69,44 @@ main {
 
 .app-image-placeholder {
     background-color: #dbe4f0; /* Lighter blue placeholder background */
-    height: 180px;
+    height: 220px; /* Increased height */
     display: flex;
     align-items: center;
     justify-content: center;
     color: #8fa6c4; /* Muted text color for placeholder */
     font-weight: bold;
-    /* Uncomment below if using actual images */
-    /* background-size: cover; */
-    /* background-position: center; */
+    overflow: hidden; /* Add overflow hidden */
+    position: relative; /* Needed for absolute positioning of img if used */
 }
 
-/* Uncomment and adjust if using <img> tags */
+/* Style the actual image inside the placeholder */
+.app-image-placeholder img.app-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */ /* Cover the area, may crop */
+    /* Or use 'contain' if you want to see the whole image without cropping: */
+    object-fit: contain; /* Changed to contain */
+    /* Optional: Add a subtle background if images have transparency */
+    /* background-color: #fff; */
+}
+
+/* Add rounded corners specifically for the Daily Affirmations icon */
+.app-image-placeholder img.daily-affirmations-icon {
+    border-radius: 15px; /* Apply rounded corners */
+    /* Ensure object-fit is still applied if needed, though inherited */
+    object-fit: contain; 
+}
+
+/* Remove or comment out the specific styling for the placeholder span if no longer needed */
+/*
+.app-image-placeholder span {
+     font-weight: bold;
+     color: #8fa6c4;
+}
+*/
+
+/* Remove the general img uncomment rule, we added a specific one */
 /*
 .app-image-placeholder img {
     display: block;
