@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paycheck - Salary Estimator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/icon.png" alt="Paycheck App Icon" class="header-logo">
+                <h1>Paycheck</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#download" class="download-btn">Download Soon</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Panoramic Image Focus - No Overlay -->
+        <section class="hero-panoramic">
+            <img src="images/panoramic.png" alt="Paycheck App Screenshots" class="panoramic-img">
+        </section>
+
+        <!-- App Introduction with Icon -->
+        <section class="app-intro">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <h2>Your Paycheck, <span class="highlight">Simplified</span></h2>
+                    <p>Take control of your earnings with Paycheck - the modern salary and tax calculator designed to help you track income in real-time, break down your paycheck, and understand your true take-home pay.</p>
+                    <p>Whether you're hourly, salaried, freelance, or gig-based, Paycheck helps you visualize and plan your income like never before.</p>
+                    <a href="#download" class="cta-button">Coming Soon to App Store</a>
+                </div>
+                <div class="intro-icon">
+                    <img src="images/icon.png" alt="Paycheck App Icon" class="app-icon">
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel Section -->
+        <section id="gallery" class="carousel-section">
+            <h2>See Paycheck in Action</h2>
+            
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <img src="images/main.png" alt="Main Screenshot" class="carousel-img">
+                            <div class="slide-description">
+                                <h3>Main Dashboard</h3>
+                                <p>Get a quick overview of your earnings and taxes at a glance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <img src="images/Hotpot 2.png" alt="Screenshot 5" class="carousel-img">
+                            <div class="slide-description">
+                                <h3>Tax Estimator</h3>
+                                <p>Estimate federal, state, and payroll taxes with clear breakdowns.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <img src="images/Hotpot 3.png" alt="Screenshot 2" class="carousel-img">
+                            <div class="slide-description">
+                                <h3>Savings Insights</h3>
+                                <p>Visualize your savings growth over time with interactive charts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <img src="images/Hotpot 4.png" alt="Screenshot 3" class="carousel-img">
+                            <div class="slide-description">
+                                <h3>Live Earnings Tracker</h3>
+                                <p>Track your earnings in real-time, down to the second.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <img src="images/Hotpot 5.png" alt="Screenshot 4" class="carousel-img">
+                            <div class="slide-description">
+                                <h3>Custom Settings</h3>
+                                <p>Personalize your experience and save your preferences automatically.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <img src="images/icon.png" alt="App Icon" class="carousel-img">
+                            <div class="slide-description">
+                                <h3>App Icon</h3>
+                                <p>Look for this icon on your device when you launch Paycheck.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <img src="images/panoramic.png" alt="Panoramic Screenshot" class="carousel-img">
+                            <div class="slide-description">
+                                <h3>All Features in One View</h3>
+                                <p>See the full range of Paycheck's capabilities in a single panoramic image.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Controls -->
+                <button class="carousel-button prev" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button class="indicator active" aria-label="Go to slide 1"></button>
+                    <button class="indicator" aria-label="Go to slide 2"></button>
+                    <button class="indicator" aria-label="Go to slide 3"></button>
+                    <button class="indicator" aria-label="Go to slide 4"></button>
+                    <button class="indicator" aria-label="Go to slide 5"></button>
+                    <button class="indicator" aria-label="Go to slide 6"></button>
+                    <button class="indicator" aria-label="Go to slide 7"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <h2>Features You'll Love</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card" style="--feature-color: var(--pastel-pink);">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Accurate Calculations</h3>
+                    <p>Calculate earnings daily, weekly, monthly, or yearly. Enter your rate and hours – we do the rest.</p>
+                </div>
+                
+                <div class="feature-card" style="--feature-color: var(--pastel-blue);">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Live Earnings Tracker</h3>
+                    <p>Watch your money grow second-by-second with beautiful interactive charts.</p>
+                </div>
+                
+                <div class="feature-card" style="--feature-color: var(--pastel-green);">
+                    <div class="feature-icon">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <h3>Tax Estimator</h3>
+                    <p>Estimate federal, state, and payroll taxes with clear breakdowns.</p>
+                </div>
+                
+                <div class="feature-card" style="--feature-color: var(--pastel-yellow);">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Custom Settings</h3>
+                    <p>Your preferences are saved automatically for a personalized experience.</p>
+                </div>
+                
+                <div class="feature-card" style="--feature-color: var(--pastel-purple);">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Modern Work Support</h3>
+                    <p>Designed for flexibility - full-time, part-time, or gig-based work.</p>
+                </div>
+                
+                <div class="feature-card" style="--feature-color: var(--pastel-teal);">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Clean UI Design</h3>
+                    <p>Simple and intuitive interface that's easy to use yet powerful.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Benefits section -->
+        <section class="benefits-section">
+            <div class="benefits-container">
+                <h2>Why Choose Paycheck?</h2>
+                
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Fast, Live Updates</h3>
+                            <p>Built with modern SwiftData and Combine for instant calculations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Tax Intelligence</h3>
+                            <p>Reduce guesswork with smart tax estimations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Visualized Growth</h3>
+                            <p>Track your financial progress with beautiful charts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Download Section with App Icon -->
+        <section id="download" class="download-section">
+            <div class="download-container">
+                <img src="images/icon.png" alt="Paycheck App Icon" class="download-icon">
+                <h2>Ready to take control of your income?</h2>
+                <p>Paycheck is coming soon to the App Store.</p>
+                <a href="#" class="download-cta">
+                    <i class="fab fa-apple"></i> Coming Soon to App Store
+                </a>
+                <div class="notify-me">
+                    <p>Be the first to know when we launch:</p>
+                    <form class="notify-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Notify Me</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/icon.png" alt="Paycheck Logo" class="footer-logo-img">
+                    <span>Paycheck</span>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Paycheck - Salary Estimator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple carousel functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(track.children);
+            const nextButton = document.querySelector('.carousel-button.next');
+            const prevButton = document.querySelector('.carousel-button.prev');
+            const indicators = document.querySelectorAll('.carousel-indicators button');
+            
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            
+            // Set slide positions
+            slides.forEach((slide, index) => {
+                slide.style.left = `${index * 100}%`;
+            });
+            
+            // Add active class to first slide
+            slides[0].classList.add('active');
+            
+            let currentIndex = 0;
+            
+            // Move to a specific slide
+            const moveToSlide = (index) => {
+                if (index < 0) index = slides.length - 1;
+                if (index >= slides.length) index = 0;
+                
+                track.style.transform = `translateX(-${index * 100}%)`;
+                
+                // Update active class on slides
+                slides.forEach(slide => slide.classList.remove('active'));
+                slides[index].classList.add('active');
+                
+                // Update active class on indicators
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+                indicators[index].classList.add('active');
+                
+                currentIndex = index;
+            };
+            
+            // Next button
+            nextButton.addEventListener('click', () => {
+                moveToSlide(currentIndex + 1);
+            });
+            
+            // Previous button
+            prevButton.addEventListener('click', () => {
+                moveToSlide(currentIndex - 1);
+            });
+            
+            // Indicator buttons
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    moveToSlide(index);
+                });
+            });
+            
+            // Auto-advance the carousel every 5 seconds
+            setInterval(() => {
+                moveToSlide(currentIndex + 1);
+            }, 5000);
+        });
+    </script>
+</body>
+</html> 
