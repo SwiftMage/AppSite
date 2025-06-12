@@ -1,7 +1,7 @@
 # Product Design Documentation
 
 ## 1. Product Overview
-- Product name: Paycheck - Salary Estimator
+- Product name: Paycheck - Salary Calculator
 - Description: Your Ultimate Paycheck & Earnings Companion. A modern salary and tax calculator designed to help you track your earnings in real-time, break down your paycheck, and understand your true take-home pay. Built with the latest SwiftUI technology.
 - Mission statement and core objectives: To provide users with a simple, accurate, and intuitive tool to manage their income, understand their taxes, and track earnings live.
 - Key stakeholders and team structure: (To be filled)
