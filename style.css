@@ -87,6 +87,7 @@ main {
     /* object-fit: cover; */ /* Cover the area, may crop */
     /* Or use 'contain' if you want to see the whole image without cropping: */
     object-fit: contain; /* Changed to contain */
+    border-radius: 15px; /* Add rounded corners */
     /* Optional: Add a subtle background if images have transparency */
     /* background-color: #fff; */
 }
