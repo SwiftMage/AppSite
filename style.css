@@ -82,12 +82,14 @@ main {
 /* Style the actual image inside the placeholder */
 .app-image-placeholder img.app-icon {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 80%;
+    max-width: 80%;
+    margin: auto;
     /* object-fit: cover; */ /* Cover the area, may crop */
     /* Or use 'contain' if you want to see the whole image without cropping: */
     object-fit: contain; /* Changed to contain */
-    border-radius: 15px; /* Add rounded corners */
+    border-radius: 22%; /* iOS-style rounded corners */
     /* Optional: Add a subtle background if images have transparency */
     /* background-color: #fff; */
 }
