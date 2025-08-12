@@ -158,6 +158,105 @@ footer {
     border-top: 1px solid #d1d9e6; /* Subtle border top */
 }
 
+/* Carousel Styles for AwesomeCopy Mobile */
+.carousel-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.carousel-container h2 {
+    color: #4a6fa5;
+    margin-bottom: 1rem;
+}
+
+.carousel {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: 15px;
+    display: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+/* Features container styling */
+.features-container {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.features-container h2 {
+    color: #4a6fa5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    background-color: #ffffff;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #5d8ac7;
+}
+
+/* Carousel features section layout */
+#carousel-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
+/* App Store button styling */
+.app-store-btn {
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.app-store-btn:hover {
+    background-color: #333;
+    text-decoration: none;
+}
+
+/* Back button styling */
+.back-btn {
+    color: #4a6fa5;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 600px) {
     header h1 {
@@ -168,5 +267,15 @@ footer {
     }
     .app-grid {
         grid-template-columns: 1fr; /* Single column on small screens */
+    }
+    
+    /* Stack carousel and features on mobile */
+    #carousel-features {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .carousel {
+        max-width: 250px;
     }
 } 
