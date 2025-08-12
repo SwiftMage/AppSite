@@ -75,8 +75,9 @@ main {
     justify-content: center;
     color: #8fa6c4; /* Muted text color for placeholder */
     font-weight: bold;
-    overflow: hidden; /* Add overflow hidden */
+    overflow: visible; /* Changed to visible to prevent cutoff */
     position: relative; /* Needed for absolute positioning of img if used */
+    padding: 25px; /* Add padding to the container */
 }
 
 /* Style the actual image inside the placeholder */
@@ -84,12 +85,11 @@ main {
     display: block !important;
     width: auto !important;
     height: auto !important;
-    max-width: calc(100% - 40px) !important;
-    max-height: calc(100% - 40px) !important;
-    margin: 20px auto !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    margin: 0 auto !important;
     object-fit: contain !important;
     border-radius: 22% !important;
-    padding: 5px !important;
     /* Optional: Add a subtle background if images have transparency */
     /* background-color: #fff; */
 }
