@@ -81,16 +81,14 @@ main {
 
 /* Style the actual image inside the placeholder */
 .app-image-placeholder img.app-icon {
-    display: block;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    padding: 15px;
-    box-sizing: border-box;
-    object-fit: contain; /* Ensure images fit without being cut off */
-    border-radius: 22%; /* iOS-style rounded corners */
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: calc(100% - 30px) !important;
+    max-height: calc(100% - 30px) !important;
+    margin: 15px auto !important;
+    object-fit: contain !important;
+    border-radius: 22% !important;
     /* Optional: Add a subtle background if images have transparency */
     /* background-color: #fff; */
 }
