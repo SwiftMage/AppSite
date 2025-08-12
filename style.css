@@ -83,9 +83,12 @@ main {
 .app-image-placeholder img.app-icon {
     display: block;
     width: auto;
-    height: 95%;
-    max-width: 95%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
     object-fit: contain; /* Ensure images fit without being cut off */
     border-radius: 22%; /* iOS-style rounded corners */
     /* Optional: Add a subtle background if images have transparency */
