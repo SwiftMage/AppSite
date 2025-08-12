@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AwesomeCopy Mobile - iOS Clipboard Manager</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="app-title">AwesomeCopy Mobile</h1>
+        <p class="tagline">Your Clipboard, Everywhere</p>
+    </header>
+
+    <main>
+        <section id="carousel-features">
+             <div class="carousel-container">
+                <h2>Screenshots</h2>
+                <div class="carousel">
+                    <img src="images/IMG_6852.PNG" alt="AwesomeCopy Mobile Screenshot 1" class="carousel-image active">
+                    <img src="images/IMG_6853.PNG" alt="AwesomeCopy Mobile Screenshot 2" class="carousel-image">
+                    <img src="images/IMG_6854.PNG" alt="AwesomeCopy Mobile Screenshot 3" class="carousel-image">
+                    <img src="images/IMG_6855.PNG" alt="AwesomeCopy Mobile Screenshot 4" class="carousel-image">
+                </div>
+            </div>
+            <div class="features-container">
+                <h2>Features</h2>
+                <ul class="features-list">
+                    <li>iCloud Sync: Keep clipboard history and pinned items in perfect sync with AwesomeCopy for macOS</li>
+                    <li>Clipboard History: Access up to 100 of your most recent copied items (configurable)</li>
+                    <li>Pinning: Keep important snippets at the top of your list</li>
+                    <li>One-Tap Copy: Copy any item back to your clipboard instantly</li>
+                    <li>Smart Previews: View text, images, and file paths at a glance</li>
+                    <li>Privacy First: All data is stored securely in iCloud and on your devices—never on our servers</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="description">
+            <h2>Bring AwesomeCopy to Your iPhone and iPad</h2>
+            <p>This companion app syncs your clipboard history with your Mac via iCloud, so the snippets, images, and file paths you save at your desk are instantly available on the go.</p>
+            
+            <p>Whether you're picking up where you left off from your Mac, grabbing a snippet you saved earlier, or pinning something important for later, AwesomeCopy for iOS makes your clipboard history accessible anytime, anywhere—with the same speed, privacy, and thoughtful design you love on macOS.</p>
+
+            <h3>Your Clipboard, In Sync</h3>
+            <p>AwesomeCopy automatically keeps your clipboard history lists up to date across all your devices using secure iCloud sync. Copy something on your Mac and it appears on your iPhone. Pin a snippet on iOS, and it's right there waiting for you on macOS. It's seamless, fast, and built entirely around your workflow.</p>
+
+            <h3>Designed for iOS</h3>
+            <p>Optimized for touch, AwesomeCopy for iOS gives you quick access to your clipboard history with large previews, simple gestures, and one-tap copying. Search your history, manage pinned items, and view timestamps—right from your pocket.</p>
+
+            <h3>Built for Privacy and Performance</h3>
+            <p>AwesomeCopy for iOS is just as private as its Mac counterpart. Your clipboard history is never tracked, sold, or shared. Data syncs only through your personal iCloud account, ensuring complete privacy.</p>
+
+            <h3>Requirements</h3>
+            <ul>
+                <li>AwesomeCopy for macOS 1.5 or later for full syncing features</li>
+                <li>iOS 17 or later</li>
+            </ul>
+
+            <p><strong>With AwesomeCopy for iOS, your clipboard is no longer tied to one device—it's everywhere you are.</strong></p>
+        </section>
+
+        <section id="download">
+            <h2>Get AwesomeCopy Mobile</h2>
+            <p>Available on the App Store</p>
+            <a href="#" class="app-store-btn">Download from App Store</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AppSpire Studios. All rights reserved.</p>
+        <a href="../index.html" class="back-btn">← Back to Apps</a>
+    </footer>
+
+    <script>
+        // Carousel functionality (reusing from AwesomeCopy page)
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.carousel-image');
+        const totalImages = images.length;
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % totalImages;
+            showImage(currentImageIndex);
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
+            showImage(currentImageIndex);
+        }
+
+        // Auto-advance carousel every 4 seconds
+        setInterval(nextImage, 4000);
+
+        // Add click handlers for manual navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.carousel');
+            if (carousel) {
+                carousel.addEventListener('click', nextImage);
+            }
+        });
+    </script>
+</body>
+</html>
