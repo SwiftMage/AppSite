@@ -69,7 +69,7 @@ main {
 
 .app-image-placeholder {
     background-color: #dbe4f0; /* Lighter blue placeholder background */
-    height: 220px; /* Increased height */
+    height: 250px; /* Increased height for better image fit */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,8 +83,8 @@ main {
 .app-image-placeholder img.app-icon {
     display: block;
     width: auto;
-    height: 90%;
-    max-width: 90%;
+    height: 95%;
+    max-width: 95%;
     margin: auto;
     object-fit: contain; /* Ensure images fit without being cut off */
     border-radius: 22%; /* iOS-style rounded corners */
