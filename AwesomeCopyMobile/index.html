@@ -8,17 +8,146 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for AwesomeCopy Mobile page */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero-section .tagline {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+        
+        .download-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            font-weight: 600;
+        }
+        
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .showcase-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            color: #4a6fa5;
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-section {
+            background: #f8f9fa;
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+        
+        .info-section h2 {
+            color: #4a6fa5;
+            margin-bottom: 1.5rem;
+        }
+        
+        .requirements-list {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+        
+        .requirements-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .requirements-list li {
+            padding: 0.5rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+        
+        .requirements-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #5d8ac7;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            
+            .showcase-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1 class="app-title">AwesomeCopy Mobile</h1>
+    <div class="hero-section">
+        <h1>AwesomeCopy Mobile</h1>
         <p class="tagline">Your Clipboard, Everywhere</p>
-    </header>
+        <div class="download-badge">Available on iOS 17+</div>
+    </div>
 
-    <main>
-        <section id="carousel-features">
-             <div class="carousel-container">
-                <h2>Screenshots</h2>
+    <main class="main-content">
+        <section class="showcase-section">
+            <div class="carousel-container">
+                <h2 style="color: #4a6fa5; margin-bottom: 1rem;">See It In Action</h2>
                 <div class="carousel">
                     <img src="images/IMG_6852.PNG" alt="AwesomeCopy Mobile Screenshot 1" class="carousel-image active">
                     <img src="images/IMG_6853.PNG" alt="AwesomeCopy Mobile Screenshot 2" class="carousel-image">
@@ -26,42 +155,65 @@
                     <img src="images/IMG_6855.PNG" alt="AwesomeCopy Mobile Screenshot 4" class="carousel-image">
                 </div>
             </div>
-            <div class="features-container">
-                <h2>Features</h2>
-                <ul class="features-list">
-                    <li>iCloud Sync: Keep clipboard history and pinned items in perfect sync with AwesomeCopy for macOS</li>
-                    <li>Clipboard History: Access up to 100 of your most recent copied items (configurable)</li>
-                    <li>Pinning: Keep important snippets at the top of your list</li>
-                    <li>One-Tap Copy: Copy any item back to your clipboard instantly</li>
-                    <li>Smart Previews: View text, images, and file paths at a glance</li>
-                    <li>Privacy First: All data is stored securely in iCloud and on your devices—never on our servers</li>
-                </ul>
+            <div>
+                <h2 style="color: #4a6fa5; margin-bottom: 2rem;">Powerful Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">☁️</div>
+                        <h3>iCloud Sync</h3>
+                        <p>Seamlessly sync with AwesomeCopy for macOS</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📋</div>
+                        <h3>Clipboard History</h3>
+                        <p>Access up to 100 recent items</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📌</div>
+                        <h3>Pin Important Items</h3>
+                        <p>Keep favorites at the top</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Privacy First</h3>
+                        <p>Your data stays on your devices</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="description">
-            <h2>Bring AwesomeCopy to Your iPhone and iPad</h2>
-            <p>This companion app syncs your clipboard history with your Mac via iCloud, so the snippets, images, and file paths you save at your desk are instantly available on the go.</p>
+        <div class="info-section">
+            <h2>The Perfect Companion for Your Mac</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8;">This companion app syncs your clipboard history with your Mac via iCloud, so the snippets, images, and file paths you save at your desk are instantly available on the go.</p>
+        </div>
+
+        <section style="margin: 4rem 0;">
+            <h2 style="text-align: center; color: #4a6fa5; margin-bottom: 3rem;">Why You'll Love It</h2>
             
-            <p>Whether you're picking up where you left off from your Mac, grabbing a snippet you saved earlier, or pinning something important for later, AwesomeCopy for iOS makes your clipboard history accessible anytime, anywhere—with the same speed, privacy, and thoughtful design you love on macOS.</p>
+            <div class="info-section">
+                <h3>🔄 Always In Sync</h3>
+                <p>Copy on Mac, paste on iPhone. Pin on iOS, access on macOS. Your clipboard flows seamlessly across all your Apple devices through secure iCloud sync.</p>
+            </div>
 
-            <h3>Your Clipboard, In Sync</h3>
-            <p>AwesomeCopy automatically keeps your clipboard history lists up to date across all your devices using secure iCloud sync. Copy something on your Mac and it appears on your iPhone. Pin a snippet on iOS, and it's right there waiting for you on macOS. It's seamless, fast, and built entirely around your workflow.</p>
+            <div class="info-section">
+                <h3>📱 Built for Touch</h3>
+                <p>Large previews, intuitive gestures, and one-tap copying make managing your clipboard effortless on iOS. Search, pin, and organize with ease.</p>
+            </div>
 
-            <h3>Designed for iOS</h3>
-            <p>Optimized for touch, AwesomeCopy for iOS gives you quick access to your clipboard history with large previews, simple gestures, and one-tap copying. Search your history, manage pinned items, and view timestamps—right from your pocket.</p>
-
-            <h3>Built for Privacy and Performance</h3>
-            <p>AwesomeCopy for iOS is just as private as its Mac counterpart. Your clipboard history is never tracked, sold, or shared. Data syncs only through your personal iCloud account, ensuring complete privacy.</p>
-
-            <h3>Requirements</h3>
-            <ul>
-                <li>AwesomeCopy for macOS 1.5 or later for full syncing features</li>
-                <li>iOS 17 or later</li>
-            </ul>
-
-            <p><strong>With AwesomeCopy for iOS, your clipboard is no longer tied to one device—it's everywhere you are.</strong></p>
+            <div class="info-section">
+                <h3>🛡️ Privacy-First Design</h3>
+                <p>Your data never leaves your devices and iCloud account. No tracking, no servers, no compromises on your privacy.</p>
+            </div>
         </section>
+
+        <div class="requirements-list">
+            <h3 style="color: #4a6fa5; margin-bottom: 1rem;">Requirements</h3>
+            <ul>
+                <li>AwesomeCopy for macOS 1.5 or later for full syncing</li>
+                <li>iOS 17 or later</li>
+                <li>iCloud enabled for sync features</li>
+            </ul>
+        </div>
 
         <section id="download">
             <h2>Get AwesomeCopy Mobile</h2>
@@ -71,7 +223,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 AppSpire Studios. All rights reserved.</p>
+        <p>
+            &copy; 2024 AppSpire Studios. All rights reserved. | 
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Terms of Use (Apple EULA)</a>
+        </p>
         <a href="../index.html" class="back-btn">← Back to Apps</a>
     </footer>
 

@@ -84,11 +84,12 @@ main {
     display: block !important;
     width: auto !important;
     height: auto !important;
-    max-width: calc(100% - 30px) !important;
-    max-height: calc(100% - 30px) !important;
-    margin: 15px auto !important;
+    max-width: calc(100% - 40px) !important;
+    max-height: calc(100% - 40px) !important;
+    margin: 20px auto !important;
     object-fit: contain !important;
     border-radius: 22% !important;
+    padding: 5px !important;
     /* Optional: Add a subtle background if images have transparency */
     /* background-color: #fff; */
 }
