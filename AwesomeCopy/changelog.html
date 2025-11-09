@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog - Awesome Copy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .changelog-section {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .version-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .version-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #007bff;
+            margin-bottom: 0.5rem;
+        }
+
+        .release-date {
+            font-size: 1.1rem;
+            color: #6c757d;
+            font-weight: 300;
+        }
+
+        .changes-category {
+            margin-bottom: 2.5rem;
+        }
+
+        .changes-category h3 {
+            font-size: 1.5rem;
+            color: #495057;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .changes-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .changes-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.8rem;
+            position: relative;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .changes-list.features li::before {
+            content: '✨';
+            position: absolute;
+            left: 0;
+            font-size: 1.1rem;
+        }
+
+        .changes-list.fixes li::before {
+            content: '🔧';
+            position: absolute;
+            left: 0;
+            font-size: 1.1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: #e9ecef;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="app-title">Awesome Copy</h1>
+        <p class="tagline">Release History</p>
+    </header>
+
+    <main>
+        <section class="changelog-section">
+            <a href="index.html" class="back-link">← Back to Home</a>
+
+            <div class="version-header">
+                <div class="version-number">Version 4.20</div>
+                <div class="release-date">November 2025</div>
+            </div>
+
+            <div class="changes-category">
+                <h3>New Features</h3>
+                <ul class="changes-list features">
+                    <li>Link Previews</li>
+                    <li>Audio Album Art Display</li>
+                    <li>In-App Audio Playback</li>
+                    <li>New Crayon Box Theme</li>
+                    <li>Copy on First Click</li>
+                    <li>Command+Delete Deletes Selected Items</li>
+                    <li>Drag Text Into Text Fields</li>
+                    <li>ICNS File Support</li>
+                    <li>Time-Based History Limits</li>
+                    <li>iOS to macOS Sync Support</li>
+                    <li>iOS Deletion Sync</li>
+                    <li>Redesigned iOS Keyboard</li>
+                    <li>Text-to-Speech for Clipboard Entries</li>
+                </ul>
+            </div>
+
+            <div class="changes-category">
+                <h3>Bug Fixes</h3>
+                <ul class="changes-list fixes">
+                    <li>Original File Types Preserved</li>
+                    <li>Auto Paste Feature Fixed</li>
+                    <li>Notes App Compatibility</li>
+                    <li>CloudKit Startup Reliability</li>
+                    <li>Fixed Incorrect File Size Displayed</li>
+                    <li>Category Filter iCloud Sync Fixed</li>
+                    <li>Transparency Settings Now Persist</li>
+                    <li>Drag-to-Reorder Now Persists Across Syncs</li>
+                    <li>Edit Window Now Resizable</li>
+                    <li>Edit Window Text Readability Fixed</li>
+                    <li>Command+, Opens Settings</li>
+                    <li>History Limit Now Properly Enforced</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2024 Awesome Copy. All rights reserved. |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Terms of Use (Apple EULA)</a> |
+            Need help? Contact <a href="mailto:appspire@icloud.com">appspire@icloud.com</a>
+        </p>
+    </footer>
+</body>
+</html>
