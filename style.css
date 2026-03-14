@@ -1,61 +1,71 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eef1f5 !important; /* Light grayish blue background - added important */
-    color: #333;
+    background-color: #f5f5f7 !important;
+    color: #1d1d1f;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Header */
 header {
-    background-color: #4a6fa5; /* Muted blue header */
+    background-color: #1d1d1f;
     color: white;
-    padding: 2.5rem 1rem;
+    padding: 3rem 1rem 2.5rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 22%;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     margin: 0 0 0.5rem 0;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    letter-spacing: -0.02em;
 }
 
 header p {
     margin: 0;
-    font-weight: 300;
-    font-size: 1.1rem;
-    opacity: 0.9;
+    font-weight: 400;
+    font-size: 1.15rem;
+    opacity: 0.7;
+    letter-spacing: 0.01em;
 }
 
 /* Main Content */
 main {
     max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
 }
 
 /* App Grid Section */
 .app-grid h2 {
     text-align: center;
     font-size: 2rem;
-    color: #3b5998; /* Slightly darker blue for section heading */
+    color: #1d1d1f;
     margin-bottom: 2rem;
 }
 
 .app-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
 /* App Card Styling */
 .app-card {
-    background-color: #ffffff !important; /* White background - added important */
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff !important;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -63,21 +73,21 @@ main {
 }
 
 .app-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .app-image-placeholder {
-    background-color: #dbe4f0; /* Lighter blue placeholder background */
-    height: 250px; /* Increased height for better image fit */
+    background-color: #f5f5f7;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #8fa6c4; /* Muted text color for placeholder */
+    color: #86868b;
     font-weight: bold;
-    overflow: hidden; /* Prevent cutoff */
-    position: relative; /* Needed for absolute positioning of img if used */
-    padding: 15px; /* Moderate padding for safety */
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
 }
 
 /* Style the actual image inside the placeholder */
@@ -90,31 +100,11 @@ main {
     margin: 0 auto !important;
     object-fit: contain !important;
     border-radius: 22% !important;
-    /* Optional: Add a subtle background if images have transparency */
-    /* background-color: #fff; */
 }
-
-/* Remove or comment out the specific styling for the placeholder span if no longer needed */
-/*
-.app-image-placeholder span {
-     font-weight: bold;
-     color: #8fa6c4;
-}
-*/
-
-/* Remove the general img uncomment rule, we added a specific one */
-/*
-.app-image-placeholder img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-*/
 
 .app-info {
     padding: 1.5rem;
-    flex-grow: 1; /* Allows info section to fill space */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
@@ -122,42 +112,72 @@ main {
 .app-info h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-size: 1.4rem;
-    color: #4a6fa5;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    letter-spacing: -0.01em;
 }
 
 .app-info p {
     margin-bottom: 1rem;
-    flex-grow: 1; /* Pushes button to the bottom */
-    color: #555;
+    flex-grow: 1;
+    color: #6e6e73;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .btn-view-app {
     display: inline-block;
-    background-color: #5d8ac7; /* Button color */
+    background-color: #0071e3;
     color: white;
-    padding: 0.6rem 1.2rem;
-    border-radius: 5px;
+    padding: 0.6rem 1.4rem;
+    border-radius: 8px;
     text-decoration: none;
     text-align: center;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-top: auto; /* Aligns button to bottom */
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+    margin-top: auto;
 }
 
 .btn-view-app:hover {
-    background-color: #4a6fa5; /* Darker blue on hover */
+    background-color: #0077ed;
     text-decoration: none;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
     margin-top: 3rem;
-    font-size: 0.9rem;
-    color: #666;
-    border-top: 1px solid #d1d9e6; /* Subtle border top */
+    font-size: 0.85rem;
+    color: #86868b;
+    border-top: 1px solid #d2d2d7;
+}
+
+footer p {
+    margin: 0 0 0.75rem 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: #0071e3;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-divider {
+    color: #d2d2d7;
 }
 
 /* Carousel Styles for AwesomeCopy Mobile */
@@ -167,7 +187,7 @@ footer {
 }
 
 .carousel-container h2 {
-    color: #4a6fa5;
+    color: #1d1d1f;
     margin-bottom: 1rem;
 }
 
@@ -175,7 +195,7 @@ footer {
     position: relative;
     max-width: 300px;
     margin: 0 auto;
-    background-color: #f8f9fa;
+    background-color: #f5f5f7;
     border-radius: 20px;
     padding: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -202,7 +222,7 @@ footer {
 }
 
 .features-container h2 {
-    color: #4a6fa5;
+    color: #1d1d1f;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -218,7 +238,7 @@ footer {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    border-left: 4px solid #5d8ac7;
+    border-left: 4px solid #0071e3;
 }
 
 /* Carousel features section layout */
@@ -249,9 +269,9 @@ footer {
 
 /* Back button styling */
 .back-btn {
-    color: #4a6fa5;
+    color: #0071e3;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     margin-left: 1rem;
 }
 
@@ -268,16 +288,16 @@ footer {
         font-size: 1rem;
     }
     .app-grid {
-        grid-template-columns: 1fr; /* Single column on small screens */
+        grid-template-columns: 1fr;
     }
-    
+
     /* Stack carousel and features on mobile */
     #carousel-features {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .carousel {
         max-width: 250px;
     }
-} 
+}
